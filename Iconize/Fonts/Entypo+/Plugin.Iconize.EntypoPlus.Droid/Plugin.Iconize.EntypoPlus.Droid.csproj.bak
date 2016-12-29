@@ -5,17 +5,17 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{C8FE4F23-70B6-475D-9B87-BD655B8CD22D}</ProjectGuid>
+    <ProjectGuid>{6507B5F9-82B7-4E24-9B1F-8BFF65EB17C4}</ProjectGuid>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Plugin.Iconize.Fonts</RootNamespace>
-    <AssemblyName>Plugin.Iconize.Typicons.Droid</AssemblyName>
+    <AssemblyName>Plugin.Iconize.EntypoPlus.Droid</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
     <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
-    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v7.0</TargetFrameworkVersion>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
   </PropertyGroup>
@@ -35,7 +35,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\Release\Plugin.Iconize.Typicons.Droid.xml</DocumentationFile>
+    <DocumentationFile>bin\Release\Plugin.Iconize.EntypoPlus.Droid.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Mono.Android" />
@@ -46,11 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\TypiconsCollection.cs">
-      <Link>TypiconsCollection.cs</Link>
+    <Compile Include="..\EntypoPlusCollection.cs">
+      <Link>EntypoPlusCollection.cs</Link>
     </Compile>
+    <Compile Include="EntypoPlusModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TypiconsModule.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\Plugin.Iconize.Droid\Plugin.Iconize.Droid.csproj">
@@ -63,8 +63,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <AndroidAsset Include="..\iconize-typicons.ttf">
-      <Link>Assets\Iconize\iconize-typicons.ttf</Link>
+    <AndroidAsset Include="..\iconize-entypoplus.ttf">
+      <Link>Assets\Iconize\iconize-entypoplus.ttf</Link>
     </AndroidAsset>
   </ItemGroup>
   <ItemGroup>
